@@ -73,41 +73,17 @@
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Why Choose FarmConnect</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                (% for feature in feautures %)   <!--FOR LOOP -->
                 <!-- Feature 1 -->
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer">
                     <div class="text-green-600 mb-4">
                         <i class="fas fa-leaf text-4xl"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Farm Fresh Quality</h3>
-                    <p class="text-gray-600">Direct from local farms to your table, ensuring maximum freshness and quality.</p>
+                    <h3 class ="text-xl font-semibold mb-2 text-gray-800"> {{feature.name}} </h3>
+                    <p class="text-gray-600">{{feature.detail}}</p>
                 </div>
+                (% endfor %)
                 
-                <!-- Feature 2 -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer">
-                    <div class="text-green-600 mb-4">
-                        <i class="fas fa-truck text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Flexible Delivery</h3>
-                    <p class="text-gray-600">Choose delivery or pickup options that fit your schedule and preferences.</p>
-                </div>
-                
-                <!-- Feature 3 -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer">
-                    <div class="text-green-600 mb-4">
-                        <i class="fas fa-hands-helping text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Support Local</h3>
-                    <p class="text-gray-600">Your purchase directly supports local farmers and sustainable agriculture.</p>
-                </div>
-                
-                <!-- Feature 4 -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer">
-                    <div class="text-green-600 mb-4">
-                        <i class="fas fa-certificate text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Transparent Sourcing</h3>
-                    <p class="text-gray-600">Detailed information about farming practices, certifications, and origin.</p>
-                </div>
             </div>
         </div>
     </section>
